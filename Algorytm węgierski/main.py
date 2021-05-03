@@ -2,6 +2,28 @@
 # -*- coding: utf-8 -*-
 
 from typing import List
+import math
+from copy import deepcopy
+
+
+def reduce_matrix(matrix: List[List[float]]):
+    new_matrix = deepcopy(matrix)
+    rows = len(new_matrix)
+    cols = len(new_matrix[0])
+    # reduce rows
+    for r in range(rows):
+        min_el = min(new_matrix[r])
+        for c in range(cols):
+            new_matrix[r][c] -= min_el
+    # reduce cols
+    for c in range(cols):
+        min_el = math.inf
+        for r in range(rows):
+            if new_matrix[r][c] < min_el:
+                min_el = new_matrix[r][c]
+        for r in range(rows):
+            new_matrix[r][c] -= min_el
+    return new_matrix
 
 
 def independent_zeros(matrix: List[List[float]]):
@@ -54,4 +76,4 @@ if __name__ == '__main__':
              [3, 6, 0, 2]]
 
     print(independent_zeros(test_matrix))
-
+    print(reduce_matrix(test_matrix))
