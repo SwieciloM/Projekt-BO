@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\micha\OneDrive\Pulpit\E-learning\Semestr 4\Badania operacyjne\Ćwiczenie 8\Algorytm węgierski\project_venv
+set VIRTUAL_ENV=C:\Users\micha\OneDrive\Pulpit\E-learning\Semestr 4\Badania operacyjne\Ćwiczenie 8\Projekt-BO\Algorytm węgierski\project_venv
 
 if not defined PROMPT set PROMPT=$P$G
 

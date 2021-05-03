@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\micha\OneDrive\Pulpit\E-learning\Semestr 4\Badania operacyjne\Ćwiczenie 8\Algorytm węgierski\project_venv"
+VIRTUAL_ENV="C:\Users\micha\OneDrive\Pulpit\E-learning\Semestr 4\Badania operacyjne\Ćwiczenie 8\Projekt-BO\Algorytm węgierski\project_venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
